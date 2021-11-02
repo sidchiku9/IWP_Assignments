@@ -1,3 +1,23 @@
-body {
-    background-color: #FBEEC1;
-}
+        body {
+            background-color: #FBEEC1;
+        }
+        
+        .pwd__container {
+            row-gap: 2rem;
+        }
+        
+        .pwd__data {
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            margin: 0 var(--mb-2);
+            margin-bottom: var(--mb-4);
+        }
+        
+        .pwd__name {
+            text-transform: uppercase;
+        }
+        
+        .pwd__bar {
+            background-color: black;
+        }
