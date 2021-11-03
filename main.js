@@ -7,6 +7,8 @@ const strongPwd = /^[A-Z\d]/
 const ucPwd = /^[A-Z\d\!@#\$%&\*]{10,}$/
 
 function testFun() {
+    document.getElementById("pwd-enter").innerHTML = pwdInput.value;
+
     if (modPwd.test(pwdInput.value)) {
 
         document.getElementById("pwdbar").style.width = "40%";
@@ -61,4 +63,12 @@ function generatePassword() {
     }
 
     return pass;
+}
+
+function mouseOver() {
+    document.getElementById("pwd-enter").innerHTML = pwdInput.value.length + " is the length of the password entered";
+}
+
+function mouseOut() {
+    document.getElementById("pwd-enter").innerHTML = pwdInput.value;
 }
