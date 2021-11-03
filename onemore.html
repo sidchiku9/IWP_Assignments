@@ -34,15 +34,18 @@
 
 
             var availableBalance = parseInt(balance) + (parseInt(totalCredits) - parseInt(totalCharges));
+            totalCreditsAvailable = totalCreditsAvailable - totalCredits;
 
 
-            if (availableBalance > 0)
-
+            if (availableBalance > 0) {
                 document.getElementById("lblNewBalance").innerHTML = availableBalance;
+                document.getElementById("lblCreditLimit").innerHTML = totalCreditsAvailable + "(Credit Remaining)";
+            } else {
+                document.getElementById("lblNewBalance").innerHTML = availableBalance + " (Credit Balance Exceeded)";
+                document.getElementById("lblCreditLimit").innerHTML = "Credit balance exhausted and overused";
+            }
 
-            else
 
-                document.getElementById("lblNewBalance").innerHTML = availableBalance + " (Credit Balance Exceeded.)";
 
         }
     </script>
