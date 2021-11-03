@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+
+<html>
+
+<head lang="en">
+
+    <title>Balance Calculator</title>
+
+    <meta charset="utf-8" />
+
+    <script type="text/javascript">
+        function getBalance() {
+
+            var accountNumber = prompt("Please enter 'Account Number'", "0");
+
+            var balance = prompt("Please enter 'Balance at the beginning of month'", "0");
+
+            var totalCharges = prompt("Please enter 'Total of all items charged this month'", "0");
+
+            var totalCredits = prompt("Please enter 'Total of all credits applied this month'", "0");
+
+            var totalCreditsAvailable = prompt("Please enter 'Allowed credit limit'", "0");
+
+
+            document.getElementById("lblAccountNumber").innerHTML = accountNumber;
+
+            document.getElementById("lblAccountBalance").innerHTML = balance;
+
+            document.getElementById("lblMonthCharges").innerHTML = totalCharges;
+
+            document.getElementById("lblAccountCredits").innerHTML = totalCredits;
+
+            document.getElementById("lblCreditLimit").innerHTML = totalCreditsAvailable;
+
+
+            var availableBalance = parseInt(balance) + (parseInt(totalCredits) - parseInt(totalCharges));
+
+
+            if (availableBalance > 0)
+
+                document.getElementById("lblNewBalance").innerHTML = availableBalance;
+
+            else
+
+                document.getElementById("lblNewBalance").innerHTML = availableBalance + " (Credit Balance Exceeded.)";
+
+        }
+    </script>
+
+</head>
+
+<body onload="getBalance();">
+
+    <table style="width:100%;">
+
+        <tr>
+
+            <td colspan="4" style="width:100%;">
+                <hr />
+            </td>
+
+        </tr>
+
+        <tr>
+
+            <td style="width:20%;">
+
+                Account number
+
+            </td>
+
+            <td style="width:10%;">
+
+                <label id="lblAccountNumber"></label>
+
+            </td>
+
+            <td style="width:20%;">
+
+                Balance at the beginning of the month
+
+            </td>
+
+            <td style="width:50%;">
+
+                <label id="lblAccountBalance"></label>
+
+            </td>
+
+        </tr>
+
+        <tr>
+
+            <td style="width:20%;">
+
+                Total of all items charged this month
+
+            </td>
+
+            <td style="width:10%;">
+
+                <label id="lblMonthCharges"></label>
+
+            </td>
+
+            <td style="width:20%;">
+
+                Total of all credits applied to account this month
+
+            </td>
+
+            <td style="width:50%;">
+
+                <label id="lblAccountCredits"></label>
+
+            </td>
+
+        </tr>
+
+        <tr>
+
+            <td style="width:20%;">
+
+                Allowed credit limit
+
+            </td>
+
+            <td colspan="3" style="width:80%;">
+
+                <label id="lblCreditLimit"></label>
+
+            </td>
+
+        </tr>
+
+        <tr>
+
+            <td style="width:20%;">
+
+                <b>New Balance</b>
+
+            </td>
+
+            <td colspan="3" style="width:80%;">
+
+                <b><label id="lblNewBalance"></label></b>
+
+            </td>
+
+        </tr>
+
+        <tr>
+
+            <td colspan="4" style="width:100%;">
+
+                <button onclick="getBalance();">Calculate Again</button>
+
+            </td>
+
+        </tr>
+
+    </table>
+
+</body>
+
+</html>
