@@ -1,3 +1,62 @@
-        body {
-            background-color: #FBEEC1;
-        }
+            body {
+                background-color: #FBEEC1;
+            }
+            
+            h2 {
+                text-align: center;
+                margin: 1em 0 0.5em 0;
+                color: #343434;
+                font-weight: normal;
+                font-family: 'Ultra', sans-serif;
+                font-size: 36px;
+                line-height: 42px;
+                text-transform: uppercase;
+                text-shadow: 0 2px white, 0 3px #777;
+            }
+            
+            .pwd__inputdiv {
+                text-align: center;
+            }
+            
+            .input__pwd {
+                width: 50%;
+                padding: 1rem;
+                margin-top: 2rem;
+                margin-bottom: 2rem;
+                border: none;
+                outline: none;
+                text-align: center;
+            }
+            
+            .input__btn {
+                background-color: #4CAF50;
+                border: none;
+                font-family: 'Ultra', sans-serif;
+                color: white;
+                padding: 15px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 12px;
+            }
+            
+            .pwd__bar {
+                position: relative;
+                height: .5rem;
+            }
+            
+            .pwd__name {
+                font-family: 'Ultra', sans-serif;
+                text-transform: uppercase;
+            }
+            
+            .pwd__results {
+                border: 1px solid black;
+                font-family: 'Ultra', sans-serif;
+                padding: 2rem 2rem 2rem 2rem;
+                position: relative;
+                display: flex;
+                justify-content: space-between;
+                margin: 2rem 2rem;
+                margin-bottom: 1rem;
+            }
