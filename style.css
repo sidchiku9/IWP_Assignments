@@ -72,3 +72,19 @@
                 text-transform: uppercase;
                 text-shadow: 0 1px white, 0 1.5px #777;
             }
+            
+            .pwd__New {
+                text-align: center;
+            }
+            
+            .neww__pwd {
+                text-align: center;
+                margin: 1em 0 0.5em 0;
+                color: #343434;
+                font-weight: normal;
+                font-family: 'Ultra', sans-serif;
+                font-size: 14px;
+                line-height: 42px;
+                text-transform: uppercase;
+                text-shadow: 0 1px white, 0 1.5px #777;
+            }
