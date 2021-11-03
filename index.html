@@ -11,17 +11,17 @@
 
 <body>
     <h2> Password Strength Meter </h2>
-    <div class="pwdInput">
-        <input type="text" autofocus id="pwdinput"><br><br>
-        <button onclick="testFun()">Check</button><br><br>
+
+    <div class="pwd__inputdiv">
+        <input class="input__pwd" type="text" autofocus id="pwdinput" placeholder="Please enter your password here"><br><br>
+        <button onclick="testFun()" class="input__btn">Check</button><br><br>
     </div>
 
-    <div class="pwd__data" id="pwddata">
-        <span class="pwd__name" id="pwdtitle"></span><br><br>
-        <span class="pwd__number" id="pwdnumber"></span><br><br>
-        <span class="pwd__bar" id="pwdbar"></span><br><br>
+    <div class="pwd__results">
+        <span class="pwd__name" id="pwdtitle"></span>
+        <span class="pwd__bar" id="pwdbar"></span>
+        <span class="pwd__number" id="pwdnumber"></span>
     </div>
-
 
     <div class="pwdNew">
 
